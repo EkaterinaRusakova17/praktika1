@@ -20,7 +20,7 @@ namespace PowerCalculation
         static int Power(int a, int n)
         {
             int result = 1;
-            for (int index = 0; index < n; index++)
+            for (int index = 0; index < n; ++index)
             {
                 result *= a;
             }
