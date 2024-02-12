@@ -11,14 +11,8 @@ namespace work2
 
             string xString = x.ToString();
 
-            char[] xArray = xString.ToCharArray();
-
-            char temp = xArray[1];
-            xArray[1] = xArray[xArray.Length - 1]; 
-            xArray[xArray.Length - 1] = temp;
-
-            string nString = new string(xArray);
-            int n = Convert.ToInt32(nString);
+            xString = xString.Remove(1, 1) + xString[1];
+            int n = Convert.ToInt32(xString);
 
             Console.WriteLine("Число n: " + n);
         }
